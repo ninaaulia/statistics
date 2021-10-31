@@ -5,8 +5,8 @@ excersise from udemy course : [The Data Science Course 2021: Complete Data Scien
 ## Confidence interval for difference of two means, dependent samples
 weight lose (ibs)
 
-![alt text](![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.scribbr.com%2Fstatistics%2Ft-test%2F&psig=AOvVaw3uJRbyBTNqZ9_vTgDEADlA&ust=1635732053637000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOjs6aTH8_MCFQAAAAAdAAAAABAR)
-)
+![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.scribbr.com%2Fstatistics%2Ft-test%2F&psig=AOvVaw3uJRbyBTNqZ9_vTgDEADlA&ust=1635732053637000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOjs6aTH8_MCFQAAAAAdAAAAABAR)
+
 
 
 ### Background
@@ -19,13 +19,18 @@ The 365 team has developed a diet and an exercise program for losing weight. It 
               
               1. mean : -20.02458725746
               2. standard deviasi : 6.85889281086411
+              
 + task 2 : `Determine the appropriate statistic to use`
-              *data has a normal distribution, sample < 30 so we'll using T distribution. **Ci 95%,t0.025** *
+
+              *data has a normal distribution, sample < 30 so we'll using T distribution*
+              **Ci 95%,t0.025** 
+
 
 + task 3 : `Calculate the 95% confidence interval`
             
              1. Ci low -24.9308027152603
              2. Ci hight -15.1183717996597
+             3. 
 
 + task 4 : `Interpret the result`
           
