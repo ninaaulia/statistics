@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>medical_cost</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body style="background: rgb(255, 254, 254);">
+<div class = "login">
+    <h1>Health Insurance Costs</h1>
+     <h3>please fill the form</h3>
+    <form action="{{url_for('predict')}}"method="post">
+        <label for="age" colo>Age:  </label>
+        <input type="text" name="age" placeholder="Age" required="required" />
+        <br>
+        <br>
+        <label for="sex">Sex: </label>
+        <select name="sex" id="sex", placeholder="sex", required="required">
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+        </select>
+        <br>
+        <br>
+        <label for="bmi" colo>BMI:  </label>
+        <input type="text" name="bmi" placeholder="BMI" required="required" />
+        <br>
+        <br>
+        <label for="children" colo>Children:  </label>
+        <select name="children" id="children", placeholder="children", required="required">
+            <option value="0">Not Applicable</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br>
+        <br>
+        <label for="smoker" colo>Smoker:  </label>
+        <select name="smoker" id="smoker", placeholder="smoker", required="required">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+        <br>
+        <br>
+        <label for="region" colo>Region:  </label>
+        <select name="region" id="region", placeholder="region", required="required">
+            <option value="0">Northeast</option>
+            <option value="1">Nortwest</option>
+            <option value="2">Southeast</option>
+            <option value="3">Soutwest</option>
+        </select>
+        <br>
+        <br>       
+        <label for="bmi_categories" colo>BMI Categories:  </label>
+        <select name="bmi_categories" id="bmi_categories", placeholder="bmi_categories", required="required">
+            <option value="0">Normal (18.5<=24.986)</option>
+            <option value="1">Obese (>=30)</option>
+            <option value="2">Overweight (25.<=29.926)(</option>
+            <option value="3">Underweight (>=18.5)</option>
+
+        </select>
+        <br>
+        <br>
+
+        <button ype="sumbit" class = "btn">predict</button>
+        <button type="reset" value="Reset">Reset</button>
+
+    </form>
+
+    <br>
+    <br>
+    {{ prediction_text}}
+</body>
+</div>
+</html>
